@@ -52,7 +52,7 @@ class Passenger {
   // Passenger has drivers
   drivers() {
     return this.trips().map(function(trip) {
-      return trip.passenger();
+      return trip.driver();
     });
   }
   
