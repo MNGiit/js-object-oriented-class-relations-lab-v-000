@@ -49,6 +49,13 @@ class Passenger {
       }.bind(this));
   }
   
+  // Passenger has drivers
+  drivers() {
+    return this.trips().map(function(trip) {
+      return trip.passenger();
+    });
+  }
+  
 }
 
 class Trip {
