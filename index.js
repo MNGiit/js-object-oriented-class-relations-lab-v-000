@@ -25,7 +25,7 @@ class Driver {
   
   // Driver has passengers
   passengers() {
-    return store.trips().collect(function(trip) {
+    return this.trips().collect(function(trip) {
       return trip.passenger;
     });
   }
